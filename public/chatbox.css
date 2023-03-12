@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;;
+    margin:0px;
+    padding:0px;
+    scroll-behavior:smooth;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    /* background-color: rgb(153, 9, 9); */
+    background: linear-gradient(to right,rgb(252, 255, 69),pink);
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chatsection{
+    background-color: rgb(224, 224, 198);
+    display:flex;
+    flex-direction: column;
+    height:80vh;
+    width:400px;      /*  vdhsvjchksbdchdcschjcvds */
+    /* min-width: 40vw; */
+    border:2px solid black;
+    border-radius: 15px;
+    /* z-index: 99; */
+    overflow: hidden;
+    
+}
+#logo{
+    width:60px;
+    margin-left: 5px;
+}
+.brand{
+background-color: pink;
+display:flex;
+align-items: center;
+padding:2px;
+font-size: 1.4rem;
+border-bottom: 1px solid black;
+
+}
+.message_area{
+
+    /* background-color: blueviolet; */
+    height:76%;
+    display:flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding:16px;
+    padding-top: 40px;
+    overflow-x: hidden;
+}
+/* .message_area .message h4{ */
+    /* width:140px; */
+    /* margin:10px; */
+    /* margin-bottom: 10px;; */
+ /* } */
+.message_area::-webkit-scrollbar{
+width:6px;
+height:8px;
+background-color: #b0bbbb;
+}
+.message_area::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: #3c3535;
+
+}
+
+#textarea{
+    max-width:100%;
+    height:12%;
+    padding:10px;
+    /* border-top-right-radius: 10px; */
+    /* border-top-left-radius:10px; */
+    text-align: end;
+    size-adjust: block;
+    resize: none;
+    outline: none;
+
+}
+.message{
+    padding:10px;
+    border-radius: 5px;
+    margin-right:15px;
+    margin-bottom: 40px;
+    max-width: 300px;
+    width:fit-content;
+    position: relative;
+}
+/* .message p{
+    display:inline-block;
+} */
+.incomming {
+    background-color: rgb(62, 221, 226);
+}
+.outgoing {
+    background-color: rgb(235, 238, 87);
+    margin-left: auto;
+}
+.outgoing h4{
+    margin-right: auto;
+    padding-right:10px;
+}
+.message h4{
+    position:absolute;
+    left:0;
+    top:-20px;
+    font-size:1rem ;
+    font-weight: bold;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width:600px) {
+
+#chatsection{
+    height:70vh;
+    width:200px;
+}
+.message p{
+    font-size: 0.7rem;
+}
+.message h4{
+    font-size: 0.7rem;
+}
+#textarea{
+    width:200px;
+    font-size: 0.7rem;
+}
+    
+}
